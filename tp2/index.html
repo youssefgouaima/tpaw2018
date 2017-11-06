@@ -1,33 +1,50 @@
-<!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+     
+      <link rel="stylesheet" href="Style.css">
+      <script type="text/javascript" src="formulaire.js"></script>
+      <meta charset="utf-8">
+      <title>TP2</title>
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+    <body>
+        <h1>Saisie d'une fiche "Personne"</h1>
+        <form name="myform" method="post">
+            <br>
+        <p>
+            <label for="Nom">&nbsp;Nom</label>
+            <input type="text"  id="Nom">
+        </p>
+        <p>
+             <label for="Prénom">&nbsp;Prénom</label>
+             <input type="text"  id="Prenom">
+        </p>
+        <p>
+             <label for="Date">&nbsp;Date de naissance</label>
+             <input type="date"  id="Date" placeholder="JJ/MM/AAAA">
+             
+        </p>    
+        <p>
+             <label for="Adresse">&nbsp;Adresse</label>
+             <input type="text"  id="Adresse">
+        </p>
+        <p>
+             <label for="Mail">&nbsp;Mail</label>
+             <input type="text"  id="Mail">
+        </p> 
+        <center>
+                <input type="button" value="Valider" onclick="validation()">
+        </center>
+        
+  
+    </form>
+    <br>
+    <br>
+            
+                             <div id="error" hidden> 
+                              <label><center>Le nom doit contenir au moins 5 caracteres</center></label>
+                             </div>
+                            <div id="resultat" hidden> 
+                                 <label><center>bienvenue <output name="nom"></output></center></label>
+                            </div> 
     </body>
 </html>
