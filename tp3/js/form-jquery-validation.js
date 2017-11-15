@@ -6,9 +6,9 @@ $(document).ready(function () { //pour chargement de la page
     
             if ($('#Nom').val() == ""|| $('#prenom').val() == "" || $('#datedenaissance').val() == "" || $('#Adresse').val() == "" || $('#Email').val() == "") {
     
-                $(".modal-body").html(' ');
-                $(".modal-title").text("Veuillez remplir tous les champs SVP");
-                $('#myModal').modal("show");
+                $(".modal-title").text("Erreur");
+                $(".modal-body").html('Veuillez remplir tous les champs SVP');
+                
             }
             else {
                 $(".modal-body").text("Bienvenue "+$("#Nom").val());
@@ -17,6 +17,6 @@ $(document).ready(function () { //pour chargement de la page
                 $('#myModal').modal("show");
     
             }
-    
+    $("#myModal").modal("show");
         });
     })
