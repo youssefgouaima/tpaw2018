@@ -13,9 +13,7 @@ $(document).ready(function () { //pour chargement de la page
             else {
                 $(".modal-body").text("Bienvenue "+$("#Nom").val());
                 $(".modal-body").html(' Votre date de naissance est : ' + $("#datedenaissance").val() + 
-            '</br>'  + 'Et vous habitez : ' + '</br>'  + 
-            '<img src="https://maps.googleapis.com/maps/api/staticmap?center=Noisy%20Le%Grand&markers=Noisy%20Le%Grand&size=800x400&zoom=12&key=AIzaSyAflbMoDv0Agz3Wu7NarKAoUD3uc1iAr_Y"  height="260" width="420"/>' 
-             + $("#Adresse").val() +  '</a>' );
+            '</br>'  + 'Et vous habitez : ' + '</br>'  + <img style="max-width:100%" src="https://maps.googleapis.com/maps/api/staticmap?center='+$('#Adresse').val()+'&markers='+$('#Adresse').val()+'&size=800x400&zoom=13"/>');
              
                 $('#myModal').modal("show");
     
