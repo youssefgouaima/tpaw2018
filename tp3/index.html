@@ -2,32 +2,85 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/form-jquery-validation.js"></script>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+<style>
+    body{
+        background-color: #e9ebee;              
+        font-size: 16px;
+        margin: 0 auto;
+        max-width: 800px;              
+    }
+  </style>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
     </head>
     <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
-</html>
+        <h1>TP AW-Formulaire V2 </h1>
+<div class="container">
+  <form>
+                <br/>
+                
+        
+                    <div class="form-group row">
+                      <label for="Inputnom" class="col-sm-2 col-form-label">Nom</label>
+                      <div class="col-sm-5">
+                        <input type="text"  class="form-control" id="Nom" placeholder="entrez votre nom">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputprenom" class="col-sm-2 col-form-label">Prénom</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="prenom" placeholder="entrez votre prénom">
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                            <label for="inputdatedenaissance" class="col-sm-2 col-form-label">Date de naissance</label>
+                                <div class="col-sm-5">
+                                    <input type="date" class="form-control" id="datedenaissance" placeholder="jj/mm/aa">
+                                 </div>
+                   </div>
+                   <div class="form-group row">
+                        <label for="inputAdresse" class="col-sm-2 col-form-label">Adresse</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="Adresse" placeholder="entrez votre adresse">
+                             </div>
+                  </div>
+                  <div class="form-group row">
+                      
+                        <label for="Email" class="col-sm-2 col-form-label">Mail</label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="Email"  placeholder="Entrez votre email"><br/>
+                        <br>
+                        <button type="submit" class="btn btn-info" id="submit">Valider</button>
+                    </div>              
+                 </div>
+                
+            </form>
+
+  
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Message Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Veuillez remplir tous les champs SVP</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
