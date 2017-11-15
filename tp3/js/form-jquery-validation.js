@@ -12,7 +12,8 @@ $(document).ready(function () { //pour chargement de la page
             }
             else {
                 $(".modal-body").text("Bienvenue "+$("#Nom").val());
-                $(".modal-body").html(' <img style="max-width:100%" src="https://maps.googleapis.com/maps/api/staticmap?center='+$('#Adresse').val()+'&markers='+$('#Adresse').val()+'&size=800x400&zoom=13"/>');
+                $(".modal-body").html(' Votre date de naissance est : ' + $("#Date").val() + 
+            '</br>'  + 'Et vous habitez : ' + '</br>'  + ' <img style="max-width:100%" src="https://maps.googleapis.com/maps/api/staticmap?center='+$('#Adresse').val()+'&markers='+$('#Adresse').val()+'&size=800x400&zoom=13"/>');
                 $('#myModal').modal("show");
     
             }
