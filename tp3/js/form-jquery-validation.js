@@ -1,16 +1,12 @@
-$(document).ready(function () { //pour chargement de la page
+$(document).ready(function () { 
     
     console.log( "DOM ready!" );
     
-        $('#submit').on("click", function (event) { //ajouter un "listener" à un élément
+        $('#submit').on("click", function (event) { 
             event.preventDefault();
             console.log( "click" );
     
-            if ($('#Nom').val() == ""
-             || $('#prenom').val() == "" 
-             || $('#datedenaissance').val() == "" 
-             || $('#Adresse').val() == "" 
-             || $('#Email').val() == "") {
+            if ($('#Nom').val() == "" || $('#prenom').val() == "" || $('#datedenaissance').val() == "" || $('#Adresse').val() == "" || $('#Email').val() == "") {
     
       $(".modal-title").text("remplissez tous les champs");
                 $('#myModal').modal("show");
