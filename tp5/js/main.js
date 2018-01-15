@@ -79,7 +79,7 @@ window.onload = function () {
             this.cityWeatherLoading = true;
             
                 // appel AJAX avec fetch
-				fetch('https://demo.bilelz.fr/owmap/?q='+_city.name+'&units=metric&lang=fr&appid=1452c0dea179c5df823afa388ed470d9')
+				fetch('https://demo.bilelz.fr/owmap/?q='+_city.name+'&units=metric&lang=fr&appid=77abfa000c02ef2fadb5d02d5b4c0a78')
                     .then(function(response)
                     {
                         return response.json();
